@@ -1,5 +1,9 @@
 # Research MCP Setup Example for Claude Code Web/App
 
+
+https://github.com/user-attachments/assets/aa4ff1ed-7ffe-4284-9ddb-5348ce2cad8d
+
+
 A pre-configured Claude Code setup with research agents for academic papers, GitHub projects, and Reddit discussions.
 
 ## Features
@@ -19,10 +23,12 @@ A pre-configured Claude Code setup with research agents for academic papers, Git
 - **Network Access:** Choose **Custom access** and allow all domains using a wildcard
 - **Environment variables:** Environment Variables: Set up your Brave Search API key. You can get one from [Brave Search API](https://brave.com/search/api/).
 - You can configure any MCP server you want in your fork and inject API keys as shown in the [`.mcp.json`](/.mcp.json) file.
-<img width="520" height="767" alt="스크린샷 2025-10-21 오후 4 26 27" src="https://github.com/user-attachments/assets/443754cf-57d1-4b92-b6a2-e139f286f581" />  
+<img width="500" alt="Environment Setup Modal" src="https://github.com/user-attachments/assets/443754cf-57d1-4b92-b6a2-e139f286f581" />  
 
 #### 5. Select your forked repository for a new session and start asking questions
 #### 6. Allow repository access (one-time setup)
+#### 7. Once the environment is set up, you can use it on your phone as well (with official Claude app)!
+<img width="500" alt="Mobile screenshot" src="https://github.com/user-attachments/assets/9667056e-6832-4dea-9bd1-bda9b7ad58d4" />
 
 ## Usage
 
@@ -32,6 +38,8 @@ You can simply ask questions like:
 - “What do Reddit users think about the new iPhone? use reddit agent”
 
 The appropriate research agent will automatically handle your query.
+The research task may take a long time without feedback, so please be patient!
+I hope Anthropic improves the feedback system for subagent task execution.
 
 ## Project Structure
 
