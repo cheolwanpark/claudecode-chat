@@ -1,6 +1,6 @@
-# Claude Code Research Chat
+# Research MCP Setup Example for Claude Code Web/App
 
-A specialized Claude Code setup with pre-configured research agents for academic papers, GitHub projects, and Reddit discussions.
+A pre-configured Claude Code setup with research agents for academic papers, GitHub projects, and Reddit discussions.
 
 ## Features
 
@@ -8,31 +8,30 @@ A specialized Claude Code setup with pre-configured research agents for academic
 - **GitHub Search Agent** - Find and explore GitHub projects and code examples
 - **Reddit Search Agent** - Research community discussions and opinions
 
-## Setup
-
-Set the required environment variable:
-
-```bash
-export BRAVE_API_KEY=your_api_key_here
-```
-
-Get your API key from [Brave Search API](https://brave.com/search/api/).
-
 ## Quick Start
+#### 1. Fork this repository
+#### 2. Go to [Claude Code Web](https://claude.ai/code)  
 
-1. Open this project in Claude Code (Web or App)
-2. The agents are automatically available in your session
-3. Start asking research questions
+#### 3. Click 'Add environment' button  
+<img width="500" alt="Setup Environment Button" src="https://github.com/user-attachments/assets/a931f3b6-4b51-4908-b3a4-412c9e455ff6" />
+
+#### 4. Setup like this.
+- **Network Access:** Choose **Custom access** and allow all domains using a wildcard
+- **Environment variables:** Environment Variables: Set up your Brave Search API key. You can get one from [Brave Search API](https://brave.com/search/api/).
+- You can configure any MCP server you want in your fork and inject API keys as shown in the [`.mcp.json`](/.mcp.json) file.
+<img width="520" height="767" alt="스크린샷 2025-10-21 오후 4 26 27" src="https://github.com/user-attachments/assets/443754cf-57d1-4b92-b6a2-e139f286f581" />  
+
+#### 5. Select your forked repository for a new session and start asking questions
+#### 6. Allow repository access (one-time setup)
 
 ## Usage
 
-Simply ask questions like:
+You can simply ask questions like:
+- “Find recent papers on transformer architectures using arxiv agent”
+- “Search for React projects using TypeScript using github agent”
+- “What do Reddit users think about the new iPhone? use reddit agent”
 
-- "Find recent papers on transformer architectures"
-- "Search for React projects using TypeScript"
-- "What do Reddit users think about the new iPhone?"
-
-The appropriate research agent will automatically help answer your question.
+The appropriate research agent will automatically handle your query.
 
 ## Project Structure
 
@@ -44,5 +43,5 @@ arxiv-papers/      # Downloaded papers storage
 
 ## Requirements
 
-- Claude Code (Web or Desktop App)
-- Configured MCP servers for search capabilities
+- Claude Code Subscription (to access web or mobile app)
+- API Key for BraveSearch
