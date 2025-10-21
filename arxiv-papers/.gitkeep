@@ -1,0 +1,2 @@
+# This file ensures the arxiv-papers directory is tracked by Git
+# Papers downloaded via the arxiv MCP server will be stored here
